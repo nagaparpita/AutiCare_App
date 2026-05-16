@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.auticare">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:roundIcon="@drawable/app_logo"
+        android:label="AutiCare"
+        android:theme="@style/Theme.AutiCare">
+
+        <activity android:name=".RoutineStatusActivity"/>
+        <activity android:name=".RoutineActivity"/>
+        <activity android:name=".RewardActivity"/>
+        <activity android:name=".ProgressReportActivity"/>
+        <activity android:name=".ParentDashboardActivity"/>
+        <activity android:name=".MedicineManagementActivity"/>
+        <activity android:name=".MedicineHistoryActivity"/>
+        <activity android:name=".MedicineActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".UserSelectionActivity"/>
+        <activity android:name=".HelperDashboardActivity"/>
+        <activity android:name=".EmotionHistoryActivity"/>
+        <activity android:name=".EmotionGraphActivity"/>
+        <activity android:name=".EmotionActivity"/>
+        <activity android:name=".CommunicationHistoryActivity"/>
+        <activity android:name=".CommunicationActivity"/>
+        <activity android:name=".ChildDashboardActivity"/>
+        <activity android:name=".AddChildActivity"/>
+        <activity android:name=".ChildHistoryActivity"/>
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".RoleSelectionActivity"/>
+        <activity android:name=".ChildProfileActivity"/>
+        <activity android:name=".ParentProfileActivity"/>
+        <activity android:name=".HelperProfileActivity"/>
+        <activity android:name=".TreasureChestActivity"/>
+        <activity android:name=".EmotionMatchGameActivity"/>
+        <activity android:name=".ColorShapeSortGameActivity"/>
+        <activity android:name=".SoundIdentifyGameActivity"/>
+        <activity android:name=".MemoryMatchGameActivity"/>
+        <activity android:name=".GoodBadHabitGameActivity"/>
+        <activity android:name=".ObjectFinderGameActivity"/>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

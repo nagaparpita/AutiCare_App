@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="AutiCare Logo" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AutiCare"
+        android:textColor="#008080"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImage" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/selectRoleSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Select Your Role"
+        android:textColor="#BDBDBD"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appNameText" />
+
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/footerSection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectRoleSubtitle"
+        app:layout_constraintVertical_bias="0.45">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/parentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#6200EE"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Parent"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="32dp"
+            app:icon="@drawable/ic_parent_role"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:iconSize="40dp"
+            app:iconTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/childBtn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#6200EE"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Child"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="32dp"
+            app:icon="@drawable/ic_child_role"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:iconSize="40dp"
+            app:iconTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/helperBtn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="#6200EE"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Helper"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="32dp"
+            app:icon="@drawable/ic_helper_role"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:iconSize="40dp"
+            app:iconTint="@null" />
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/footerSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/footerLinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy | Terms of Service"
+            android:textColor="#757575"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/versionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="AutiCare App Version 1.2.3"
+            android:textColor="#757575"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

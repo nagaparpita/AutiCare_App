@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Front of the card (the image to match) -->
+        <ImageView
+            android:id="@+id/ivCardFront"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <!-- Back of the card (hidden view) -->
+        <ImageView
+            android:id="@+id/ivCardBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E2CDF5"
+            android:padding="24dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_puzzle" />
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

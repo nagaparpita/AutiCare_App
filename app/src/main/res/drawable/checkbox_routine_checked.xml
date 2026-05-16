@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    <!-- Rounded Purple Square -->
+    <path
+        android:fillColor="#6200EE"
+        android:pathData="M6,2h20c2.2,0 4,1.8 4,4v20c0,2.2 -1.8,4 -4,4h-20c-2.2,0 -4,-1.8 -4,-4v-20c0,-2.2 1.8,-4 4,-4z"/>
+    <!-- Bold White Tick -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M13,21.17L8.83,17l-1.42,1.41L13,24 25,12l-1.41,-1.41L13,21.17z"/>
+</vector>
